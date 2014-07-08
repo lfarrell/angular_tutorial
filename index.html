@@ -41,7 +41,8 @@
               <div class="controls">
                 <select id="inputStatus"
                   ng-model="currentStatus"
-                  ng-options="s.name for s in statuses"></select>
+                  ng-options="s.name for s in statuses"
+                  ng-change="setCurrentStatus(currentStatus)"></select>
               </div>
             </div>
             <div class="control-group">
@@ -49,7 +50,8 @@
               <div class="controls">
                 <select id="inputType"
                   ng-model="currentType"
-                  ng-options="t.name for t in types"></select>
+                  ng-options="t.name for t in types"
+                  ng-change="setCurrentType(currentType)"></select>
               </div>
             </div>
             <div class="control-group">
